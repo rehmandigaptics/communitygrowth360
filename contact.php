@@ -1,0 +1,409 @@
+<?php
+
+$page_title = 'Contact — CommunityGrowth360';
+
+$page_description =
+    'Contact CommunityGrowth360 to ask about programs, partnerships, workshops, volunteering and community collaboration.';
+
+$active_page = 'contact';
+$body_class = 'inner-page contact-page';
+
+require __DIR__ . '/includes/header.php';
+
+?>
+
+<main>
+
+    <!-- Hero Section -->
+    <section class="inner-hero contact-hero">
+        <div class="container-fluid cg-container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7">
+
+                    <div class="eyebrow light">
+                        <span></span>
+                        Contact & collaboration
+                    </div>
+
+                    <h1>
+                        Start with the goal.
+                        <em>We’ll build the path.</em>
+                    </h1>
+
+                    <p class="lead">
+                        Tell us what you are trying to build, improve or bring
+                        to your community. We’ll help identify the right
+                        program, partnership or next step.
+                    </p>
+
+                    <div class="inner-hero-actions">
+
+                        <a
+                            class="btn btn-gold btn-lg"
+                            href="#contact-form"
+                        >
+                            Start a conversation
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+
+                        <a
+                            class="btn btn-ghost-light btn-lg"
+                            href="services.php"
+                        >
+                            <i class="fa-solid fa-compass"></i>
+                            Explore services
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-5">
+
+                    <div class="inner-hero-visual">
+
+                        <div class="inner-hero-photo">
+                            <img
+                                src="assets/images/Contact-hero.png"
+                                alt="Community partnership conversation"
+                            >
+                        </div>
+
+                        <div class="inner-float-card">
+
+                            <span>
+                                Let’s connect
+                            </span>
+
+                            <strong>
+                                Programs, partnerships, workshops,
+                                volunteering and community support.
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact / Collaboration Section -->
+    <section
+        class="contact-premium-section contact-premium-section-v14"
+        id="contact-form"
+    >
+
+        <div class="container-fluid cg-container">
+
+            <div class="contact-premium-grid contact-premium-grid-v14">
+
+                <!-- Contact Information -->
+                <div class="contact-premium-info contact-premium-info-v14">
+
+                    <div class="inner-kicker">
+                        Ways to collaborate
+                    </div>
+
+                    <h2>
+                        Bring us the challenge.
+                        <br>
+                        <em>We’ll help shape the next move.</em>
+                    </h2>
+
+                    <p>
+                        Whether you are a Muslim entrepreneur, professional,
+                        community leader, mosque, Islamic center or community
+                        initiative, start with what you need to accomplish.
+                    </p>
+
+
+                    <!-- Collaboration Paths -->
+                    <div class="contact-paths contact-paths-v14">
+
+                        <!-- Partnership -->
+                        <a
+                            href="#inquiry"
+                            class="contact-path"
+                        >
+                            <span class="contact-path-icon">
+                                <i class="fa-solid fa-handshake"></i>
+                            </span>
+
+                            <span>
+                                <strong>Partnerships</strong>
+
+                                <small>
+                                    Co-design local programs and community
+                                    initiatives.
+                                </small>
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+
+                        <!-- Workshop -->
+                        <a
+                            href="#inquiry"
+                            class="contact-path"
+                        >
+                            <span class="contact-path-icon">
+                                <i class="fa-solid fa-people-roof"></i>
+                            </span>
+
+                            <span>
+                                <strong>Host a workshop</strong>
+
+                                <small>
+                                    Bring practical learning to your
+                                    organization or neighborhood.
+                                </small>
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+
+                        <!-- Volunteer -->
+                        <a
+                            href="#inquiry"
+                            class="contact-path"
+                        >
+                            <span class="contact-path-icon">
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                            </span>
+
+                            <span>
+                                <strong>Volunteer or support</strong>
+
+                                <small>
+                                    Contribute time, expertise, mentorship
+                                    or resources.
+                                </small>
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Direct Email -->
+                    <div class="contact-direct-card">
+
+                        <span class="contact-direct-eyebrow">
+                            Prefer email?
+                        </span>
+
+                        <a href="mailto:hello@communitygrowth360.com">
+                            hello@communitygrowth360.com
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                        <p>
+                            Share your question directly and we’ll point you
+                            to the right next step.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contact Form -->
+                <div
+                    class="contact-premium-form contact-form-simple contact-form-simple-v15"
+                    id="inquiry"
+                >
+
+                    <div class="contact-form-topline"></div>
+
+
+                    <!-- Form Header -->
+                    <div class="contact-simple-head contact-simple-head-v15">
+
+                        <div class="contact-form-heading-row">
+
+                            <div>
+
+                                <span class="contact-form-kicker">
+                                    Start a conversation
+                                </span>
+
+                                <h3>
+                                    Tell us what you're
+                                    <em>building.</em>
+                                </h3>
+
+                                <p>
+                                    Share a few details and we’ll help you
+                                    identify the right next step.
+                                </p>
+
+                            </div>
+
+                            <div class="contact-form-badge">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Embedded contact form -->
+                    <div class="contact-embed-wrap">
+                        <iframe
+                            src="https://links.360growthlab.com/widget/form/4PnOT5WidHWPLPz46aa2"
+                            style="width:100%;height:100%;border:none;border-radius:8px"
+                            id="inline-4PnOT5WidHWPLPz46aa2"
+                            data-layout="{'id':'INLINE'}"
+                            data-trigger-type="alwaysShow"
+                            data-trigger-value=""
+                            data-activation-type="alwaysActivated"
+                            data-activation-value=""
+                            data-deactivation-type="neverDeactivate"
+                            data-deactivation-value=""
+                            data-form-name="Send a Message Form Rehman Ali"
+                            data-height="487"
+                            data-layout-iframe-id="inline-4PnOT5WidHWPLPz46aa2"
+                            data-form-id="4PnOT5WidHWPLPz46aa2"
+                            data-cookie-consent="true"
+                            data-cookie-consent-provider="auto"
+                            title="Send a Message Form Rehman Ali"
+                        ></iframe>
+                        <script src="https://links.360growthlab.com/js/form_embed.js"></script>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- What Happens Next -->
+    <section class="inner-section contact-next-section contact-next-section-v16">
+
+        <div class="container-fluid cg-container">
+
+            <div class="contact-next-grid contact-next-grid-v16">
+
+                <!-- Section Intro -->
+                <div class="contact-next-copy">
+
+                    <div class="inner-kicker">
+                        What happens next
+                    </div>
+
+                    <h2 class="inner-title">
+                        A simple path from
+                        <em>idea to action.</em>
+                    </h2>
+
+                    <p class="inner-copy">
+                        Once you reach out, we move quickly to understand
+                        the need, identify the best fit and outline a
+                        practical next step for your group, organization
+                        or community.
+                    </p>
+
+                </div>
+
+
+                <!-- Steps -->
+                <div class="contact-steps contact-steps-v16">
+
+                    <!-- Step 01 -->
+                    <div class="contact-step-card">
+
+                        <span class="contact-step-number">
+                            01
+                        </span>
+
+                        <div class="contact-step-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+
+                        <strong>
+                            Share the need
+                        </strong>
+
+                        <p>
+                            Tell us the audience, challenge or opportunity
+                            so we can understand what you are trying to
+                            accomplish.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Step 02 -->
+                    <div class="contact-step-card">
+
+                        <span class="contact-step-number">
+                            02
+                        </span>
+
+                        <div class="contact-step-icon">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+
+                        <strong>
+                            Find the fit
+                        </strong>
+
+                        <p>
+                            We identify the most relevant program,
+                            collaboration model or workshop approach
+                            for the situation.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Step 03 -->
+                    <div class="contact-step-card">
+
+                        <span class="contact-step-number">
+                            03
+                        </span>
+
+                        <div class="contact-step-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+
+                        <strong>
+                            Build the next step
+                        </strong>
+
+                        <p>
+                            We align on a practical action plan and define
+                            the right next conversation, program or
+                            partnership move.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<?php require __DIR__ . '/includes/footer.php'; ?>
