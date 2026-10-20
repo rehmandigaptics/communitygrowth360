@@ -1,6 +1,5 @@
 <?php
 $page_title = 'Terms of Use — CommunityGrowth360';
-$page_description = 'Read the CommunityGrowth360 Terms of Use governing access to our website, content, programs information, and related digital services.';
 $active_page = '';
 $body_class = 'inner-page legal-page terms-page';
 require __DIR__ . '/includes/header.php';

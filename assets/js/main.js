@@ -4,18 +4,103 @@
   setHeader();
   window.addEventListener('scroll', setHeader, { passive: true });
 
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const smoothBehavior = prefersReducedMotion ? 'auto' : 'smooth';
+  let lenis = null;
+
+  const headerOffset = () => {
+    const siteHeader = document.querySelector('.site-header');
+    return siteHeader ? siteHeader.getBoundingClientRect().height + 12 : 12;
+  };
+
+  const scrollToHash = (hash, updateHistory = true) => {
+    if (!hash || hash === '#') return false;
+    let el = null;
+    try {
+      el = document.querySelector(hash);
+    } catch (_) {
+      return false;
+    }
+    if (!el) return false;
+    const top = Math.max(0, window.scrollY + el.getBoundingClientRect().top - headerOffset());
+    if (lenis) {
+      lenis.scrollTo(top, { immediate: prefersReducedMotion, duration: 1.15 });
+    } else {
+      window.scrollTo({ top, behavior: smoothBehavior });
+    }
+    if (updateHistory && history.replaceState) {
+      history.replaceState(null, '', hash);
+    }
+    return true;
+  };
+
+  if (!prefersReducedMotion) {
+    import('https://cdn.jsdelivr.net/npm/lenis@1.3.17/dist/lenis.mjs').then(({ default: Lenis }) => {
+      lenis = new Lenis({
+        lerp: 0.085,
+        smoothWheel: true,
+        anchors: false,
+        autoRaf: false,
+        stopInertiaOnNavigate: true,
+        allowNestedScroll: true
+      });
+      window.cgLenis = lenis;
+
+      lenis.on('scroll', () => {
+        setHeader();
+        if (window.ScrollTrigger) ScrollTrigger.update();
+      });
+
+      if (window.gsap) {
+        gsap.ticker.add((time) => {
+          lenis.raf(time * 1000);
+        });
+        gsap.ticker.lagSmoothing(0);
+      } else {
+        const raf = (time) => {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        };
+        requestAnimationFrame(raf);
+      }
+    }).catch(() => {});
+  }
+
+  const closeMobileNav = () => {
+    const nav = document.querySelector('.navbar-collapse.show');
+    if (nav && window.bootstrap) bootstrap.Collapse.getOrCreateInstance(nav).hide();
+  };
+
+  document.querySelectorAll('a[href*="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
-      const target = link.getAttribute('href');
-      if (!target || target === '#') return;
-      const el = document.querySelector(target);
-      if (!el) return;
+      const href = link.getAttribute('href');
+      if (!href || href === '#') return;
+
+      let url;
+      try {
+        url = new URL(href, window.location.href);
+      } catch (_) {
+        return;
+      }
+
+      if (url.origin !== window.location.origin) return;
+      if (url.pathname !== window.location.pathname) return;
+      if (!url.hash || url.hash === '#') return;
+
+      if (!scrollToHash(url.hash)) return;
       e.preventDefault();
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      const nav = document.querySelector('.navbar-collapse.show');
-      if (nav && window.bootstrap) bootstrap.Collapse.getOrCreateInstance(nav).hide();
+      closeMobileNav();
     });
   });
+
+  if (window.location.hash && !prefersReducedMotion) {
+    const hash = window.location.hash;
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+    requestAnimationFrame(() => {
+      setTimeout(() => scrollToHash(hash, false), 50);
+    });
+  }
 
   const voicesCarousel = document.querySelector('#communityVoicesCarousel');
   if (voicesCarousel && window.bootstrap) {

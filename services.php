@@ -2,9 +2,6 @@
 
 $page_title = 'Services for Muslim Organizations & Community Growth — CommunityGrowth360';
 
-$page_description =
-    'CommunityGrowth360 provides digital marketing, website and funnel development, AI automation, GoHighLevel, n8n automation and lead generation.';
-
 $active_page = 'services';
 $body_class = 'inner-page services-page';
 

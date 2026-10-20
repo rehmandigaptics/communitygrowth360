@@ -10,7 +10,7 @@
         <div class="col-6 col-md-3 col-lg-3"><h4>Services</h4><a href="digital-marketing.php">Digital Marketing</a><a href="website-funnels.php">Website & Funnels</a><a href="ai-automation.php">AI Automation</a><a href="gohighlevel.php">GoHighLevel</a><a href="n8n-automation.php">n8n Automation</a><a href="lead-generation.php">Lead Generation</a></div>
         <div class="col-md-6 col-lg-3"><h4>Get Involved</h4><a href="contact.php#volunteer">Volunteer</a><a href="contact.php#partner">Partner With Us</a><a href="contact.php#host">Host a Workshop</a><a href="contact.php#support">Support a Program</a><div class="footer-contact"><span><i class="fa-regular fa-envelope"></i> hello@communitygrowth360.com</span></div></div>
       </div>
-      <div class="footer-bottom"><span>© 2026 CommunityGrowth360. All rights reserved.</span><div><a href="privacy.php">Privacy</a><a href="terms.php">Terms</a><a href="contact.php">Accessibility</a></div><strong>Building power. Creating pathways.</strong></div>
+      <div class="footer-bottom"><span>© 2026 CommunityGrowth360. All rights reserved.</span><div><a href="privacy.php">Privacy</a><a href="terms.php">Terms</a><a href="contact.php">Accessibility</a></div><div class="footer-powered"><span>Powered by</span><a href="https://360growthlab.com/" target="_blank" rel="noopener noreferrer" aria-label="360 Growth Lab"><img src="assets/images/360growthlab.png" alt="360 Growth Lab"></a></div></div>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -2,9 +2,6 @@
 
 $page_title = 'Contact — CommunityGrowth360';
 
-$page_description =
-    'Contact CommunityGrowth360 to ask about programs, partnerships, workshops, volunteering and community collaboration.';
-
 $active_page = 'contact';
 $body_class = 'inner-page contact-page';
 

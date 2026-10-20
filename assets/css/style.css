@@ -24,6 +24,13 @@
 html {
   scroll-behavior:smooth
 }
+html.lenis,
+html.lenis body {
+  height:auto
+}
+html.lenis {
+  scroll-behavior:auto
+}
 body {
   margin:0;
   font-family:"DM Sans",sans-serif;
@@ -1318,6 +1325,31 @@ button,input {
 .footer-bottom>div {
   display:flex;
   gap:18px
+}
+.footer-powered {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-weight:700;
+  font-size:.72rem;
+  color:#8299ad;
+  white-space:nowrap
+}
+.footer-powered a {
+  display:inline-flex;
+  align-items:center;
+  line-height:0
+}
+.footer-powered a:hover {
+  transform:none;
+  opacity:.85
+}
+.footer-powered img {
+  height:26px;
+  width:auto;
+  display:block
 }
 .footer-bottom strong {
   color:var(--gold);

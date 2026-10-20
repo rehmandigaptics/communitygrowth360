@@ -1,6 +1,5 @@
 <?php
 $page_title = 'Privacy Policy — CommunityGrowth360';
-$page_description = 'Read how CommunityGrowth360 collects, uses, stores and protects personal information when you interact with our website, programs and services.';
 $active_page = '';
 $body_class = 'inner-page legal-page privacy-page';
 require __DIR__ . '/includes/header.php';

@@ -1,6 +1,5 @@
 <?php
 $page_title = 'CommunityGrowth360 — Muslim Community Growth & Digital Systems';
-$page_description = 'CommunityGrowth360 helps Muslim communities, organizations and businesses build stronger connections, stronger systems and sustainable growth.';
 $active_page = 'home';
 require __DIR__ . '/includes/header.php';
 ?>

@@ -22,7 +22,6 @@ $prev = ($index !== false && $index > 0) ? $all[$slugs[$index - 1]] : null;
 $next = ($index !== false && $index < count($slugs) - 1) ? $all[$slugs[$index + 1]] : null;
 
 $page_title = $service['title'] . ' — CommunityGrowth360';
-$page_description = $service['short'];
 $active_page = 'services';
 $body_class = 'inner-page service-detail-page sd-premium service-' . $service['slug'];
 

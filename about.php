@@ -1,7 +1,6 @@
 <?php
 
 $page_title = 'About Muslim Community Growth & Muslim Community Growth — A Connected Approach to Community Growth';
-$page_description = 'Learn how CommunityGrowth360 supports Muslim organizations, businesses and community leaders with practical growth systems and trusted partnerships.';
 $active_page = 'about';
 $body_class = 'inner-page';
 

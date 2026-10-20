@@ -2,9 +2,6 @@
 
 $page_title = 'Muslim Community Impact — CommunityGrowth360';
 
-$page_description =
-    'See how CommunityGrowth360 measures Muslim community reach, participation, connection and sustained progress.';
-
 $active_page = 'impact';
 $body_class = 'inner-page';
 

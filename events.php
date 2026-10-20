@@ -2,9 +2,6 @@
 
 $page_title = 'Muslim Community Events & Opportunities — CommunityGrowth360';
 
-$page_description =
-    'Explore workshops, trainings and gatherings designed for Muslim organizations, families, leaders and community initiatives.';
-
 $active_page = 'events';
 $body_class = 'inner-page';
 

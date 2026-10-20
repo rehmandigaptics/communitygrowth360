@@ -1,6 +1,5 @@
 <?php
 $page_title = $page_title ?? 'CommunityGrowth360 — Digital Growth for Muslim Communities';
-$page_description = $page_description ?? 'CommunityGrowth360 helps Muslim businesses, professionals, mosques, Islamic centers and community initiatives grow through digital systems, automation and outreach.';
 $active_page = $active_page ?? '';
 $body_class = $body_class ?? '';
 ?>
@@ -10,7 +9,9 @@ $body_class = $body_class ?? '';
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?= htmlspecialchars($page_title) ?></title>
-  <meta name="description" content="<?= htmlspecialchars($page_description) ?>">
+  <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
