@@ -1,0 +1,4 @@
+exclude:
+  - "*.php"
+  - "includes"
+  - "_scripts"
